@@ -1,0 +1,198 @@
+[
+  {
+    "id": "audit_1790218926123_tzxre",
+    "timestamp": "2026-09-24T03:02:06.123Z",
+    "user": "Owner",
+    "mode": "cautious",
+    "workspaceId": "default-workspace",
+    "tool": "security_scanner",
+    "action": "Security Alert Bypassed: Missing Strict Headers",
+    "securityAlert": "alert_1790218926123_gk9q5",
+    "alertOverride": {
+      "alertId": "alert_1790218926123_gk9q5",
+      "reason": "Accepted for development environment",
+      "user": "Owner"
+    },
+    "resultSummary": "Alert \"Missing Strict Headers\" (LOW) bypassed by Owner. Reason: Accepted for development environment",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218926120_62dw1",
+    "timestamp": "2026-09-24T03:02:06.120Z",
+    "user": "Owner",
+    "mode": "cautious",
+    "workspaceId": "system",
+    "tool": "owner",
+    "action": "Switched Operating Mode from \"medium\" to \"cautious\"",
+    "resultSummary": "Operating mode set to cautious. Direction: MORE_RESTRICTIVE",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218926119_twu6x",
+    "timestamp": "2026-09-24T03:02:06.119Z",
+    "user": "Owner",
+    "mode": "medium",
+    "workspaceId": "system",
+    "tool": "owner",
+    "action": "Switched Operating Mode from \"unrestricted\" to \"medium\"",
+    "resultSummary": "Operating mode set to medium. Direction: MORE_RESTRICTIVE",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218926118_tsnp2",
+    "timestamp": "2026-09-24T03:02:06.118Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "system",
+    "tool": "owner",
+    "action": "Switched Operating Mode from \"cautious\" to \"unrestricted\"",
+    "resultSummary": "Operating mode set to unrestricted. Direction: LESS_RESTRICTIVE",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218926117_gfz0j",
+    "timestamp": "2026-09-24T03:02:06.117Z",
+    "user": "Owner",
+    "mode": "cautious",
+    "workspaceId": "system",
+    "tool": "owner",
+    "action": "Switched Operating Mode from \"unrestricted\" to \"cautious\"",
+    "resultSummary": "Operating mode set to cautious. Direction: MORE_RESTRICTIVE",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218926115_8id07",
+    "timestamp": "2026-09-24T03:02:06.115Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "code_execute",
+    "action": "Executed Python script: studio_test.py",
+    "params": {
+      "file": "studio_test.py",
+      "codeLength": 1696
+    },
+    "resultSummary": "Exit Code: 0 (40ms)",
+    "success": true,
+    "riskLevel": "LOW",
+    "executionTimeMs": 40
+  },
+  {
+    "id": "audit_1790218926114_gmh11",
+    "timestamp": "2026-09-24T03:02:06.114Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "terminal_execute",
+    "action": "Executed: python3 studio_test.py",
+    "params": {
+      "command": "python3 studio_test.py",
+      "cwd": "agent_workspaces/test-workspace",
+      "taskId": "task_1790218926074"
+    },
+    "resultSummary": "Exit 0 (40ms) - الرسالة: هذه رسالة سرية تتطلب التحقق من السلامة التوقيع الناتج: 84740f8be922a8ad2b955b42c5fa851fa897e30f8a9bb05bc5c30e02",
+    "success": true,
+    "riskLevel": "MEDIUM",
+    "executionTimeMs": 40
+  },
+  {
+    "id": "audit_1790218926074_oiseh",
+    "timestamp": "2026-09-24T03:02:06.074Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "file_write",
+    "action": "Wrote file studio_test.py",
+    "params": {
+      "path": "studio_test.py",
+      "size": 2041
+    },
+    "resultSummary": "Saved 2041 bytes to studio_test.py",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218917944_85q8e",
+    "timestamp": "2026-09-24T03:01:57.944Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "web_search",
+    "action": "Searched GitHub for top Python repositories: \"cryptography security hashing\"",
+    "params": {
+      "query": "cryptography security hashing"
+    },
+    "resultSummary": "Discovered 5 top GitHub Python repos",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218917636_mvgrb",
+    "timestamp": "2026-09-24T03:01:57.636Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "security_audit",
+    "action": "Scanned 2 files for security vulnerabilities & secrets",
+    "params": {
+      "filesScanned": 2
+    },
+    "resultSummary": "Found 0 findings (Score: 100/100)",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218917627_nnf5a",
+    "timestamp": "2026-09-24T03:01:57.627Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "terminal_execute",
+    "action": "Executed: python3 verify_test.py",
+    "params": {
+      "command": "python3 verify_test.py",
+      "cwd": "agent_workspaces/test-workspace",
+      "taskId": "task_1790218917586"
+    },
+    "resultSummary": "Exit 0 (41ms) - OUTPUT_JSON:{\"digest\": \"5d35e2d76c01d803bb8a51d88d1014343c86fa7aa4bfd97ca2b829a162996ba6\", \"len\": 64} [SUCCESS] All asse",
+    "success": true,
+    "riskLevel": "MEDIUM",
+    "executionTimeMs": 41
+  },
+  {
+    "id": "audit_1790218917585_7u7mu",
+    "timestamp": "2026-09-24T03:01:57.585Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "file_write",
+    "action": "Wrote file verify_test.py",
+    "params": {
+      "path": "verify_test.py",
+      "size": 377
+    },
+    "resultSummary": "Saved 377 bytes to verify_test.py",
+    "success": true,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "audit_1790218917582_6rdbk",
+    "timestamp": "2026-09-24T03:01:57.582Z",
+    "user": "Owner",
+    "mode": "unrestricted",
+    "workspaceId": "test-workspace",
+    "tool": "web_search",
+    "action": "Searched GitHub for top Python repositories: \"cryptography hmac\"",
+    "params": {
+      "query": "cryptography hmac"
+    },
+    "resultSummary": "Discovered 5 top GitHub Python repos",
+    "success": true,
+    "riskLevel": "LOW"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "operatingMode": "cautious",
+  "autonomyLevel": "cautious",
+  "allowNonCriticalAlertBypassAfterReview": true,
+  "authorizedScopes": {
+    "repositories": [
+      "*"
+    ],
+    "domains": [
+      "*",
+      "github.com",
+      "api.github.com",
+      "registry.npmjs.org",
+      "pypi.org",
+      "en.wikipedia.org",
+      "duckduckgo.com",
+      "cve.org",
+      "nvd.nist.gov",
+      "owasp.org"
+    ],
+    "paths": [
+      "*"
+    ]
+  },
+  "terminal": {
+    "enabled": true,
+    "requireApproval": true,
+    "disallowedCommands": [
+      "rm -rf /",
+      "mkfs",
+      ":(){ :|:& };:",
+      "dd if=/dev/zero",
+      "> /dev/sda",
+      "chmod -R 777 /"
+    ],
+    "timeoutSeconds": 30
+  },
+  "filesystem": {
+    "writeEnabled": true,
+    "deleteEnabled": true,
+    "requireApprovalForDelete": true,
+    "requireApprovalForOverwrite": true
+  },
+  "network": {
+    "enabled": true,
+    "requireApprovalForOutbound": true,
+    "allowedDomains": [
+      "*"
+    ]
+  },
+  "codeExecution": {
+    "enabled": true,
+    "requireApproval": true,
+    "timeoutSeconds": 30,
+    "maxOutputLength": 20000
+  },
+  "securityLab": {
+    "enabled": true,
+    "allowPocExecution": true,
+    "isolatedLabOnly": true
+  },
+  "git": {
+    "enabled": true,
+    "requireApprovalForPushOrCommit": true
+  }
+}

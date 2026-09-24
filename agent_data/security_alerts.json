@@ -1,0 +1,30 @@
+[
+  {
+    "id": "alert_1790218926123_gk9q5",
+    "severity": "LOW",
+    "type": "config_risk",
+    "title": "Missing Strict Headers",
+    "titleAr": "رؤوس أمان مفقودة",
+    "description": "Header recommendation",
+    "descriptionAr": "توصية بإضافة رؤوس أمان",
+    "resource": "server.ts",
+    "canBypass": true,
+    "bypassed": true,
+    "timestamp": "2026-09-24T03:02:06.123Z",
+    "bypassReason": "Accepted for development environment",
+    "bypassedBy": "Owner"
+  },
+  {
+    "id": "alert_1790218926122_jyvti",
+    "severity": "CRITICAL",
+    "type": "secret_leak",
+    "title": "Exposed Private Key",
+    "titleAr": "مفتاح خاص مكشوف",
+    "description": "Private SSH key found in source",
+    "descriptionAr": "تم العثور على مفتاح SSH خاص",
+    "resource": "id_rsa",
+    "canBypass": false,
+    "bypassed": false,
+    "timestamp": "2026-09-24T03:02:06.122Z"
+  }
+]

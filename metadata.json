@@ -1,0 +1,6 @@
+{
+  "name": "ApexSec Autonomous Technical & Cybersecurity Agent",
+  "description": "Autonomous AI technical engineering, coding, research, and cybersecurity lab agent with full owner control and real verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
